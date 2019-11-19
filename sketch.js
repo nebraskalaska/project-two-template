@@ -2,7 +2,7 @@ const barWidth = 20;
 let lastBar = -1;
 
 function preload() {
-  img = loadImage('/images/logo_white.png');
+  img = loadImage('images/logo_white.png');
 }
 
 function setup() {
@@ -26,4 +26,8 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+}
+
+function mousePressed(){
+    window.open('home.html', '_self');
 }
