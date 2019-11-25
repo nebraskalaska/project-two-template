@@ -14,7 +14,7 @@
 
         <div class="Left">  
 
-            <img src="./images/logo_white.png" class="logo" width="61px" height="auto">
+            <img src="./images/logo.png" class="logo" width="61px" height="auto">
 
             <ul>
             <li><h2>_Visit</h2></li>
@@ -53,12 +53,11 @@
         <div class="Right">
 
             <h1>Disjecta is a force, a platform, and a community dedicated to new, challenging ideas in the visual and performing arts.</h1>
-
+            <img src="./images/arrow.webp" class="arrow" width="60px" height="auto">
             <h2>Upcoming: Art First 13th Annual Artists’ Auction: Saturday, 16 November 2019</h2>
             <img src="./images/shrine20190925-39578-3n18ww.jpg" class="main">
-            <h3>Purchase Tickets</h3>
-            <p>The board of directors and staff of Disjecta Contemporary Art Center cordially invite you to our largest party of the year! Come on over for  a drink, something  nice to eat and for  a celebration of community in support  of something we all believe in, art.</p>
-            <p>Calendar of events.</p>
+            <h3><a href="https://www.cats.com">Purchase Tickets</a></h3>
+            <p>The board of directors and staff of Disjecta Contemporary Art Center cordially invite you to our largest party of the year! Come on over for  a drink, something  nice to eat and for  a celebration of community in support  of something we all believe in, art. <br> <br> <a href="https://www.cats.com">View Calendar</a></p>
 
 
         </div>
@@ -66,7 +65,18 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src=”scripts.js”></script> 
+    <script>
+    $(document).ready(function(){
+        //change "li" to "a" or better the ".class" of your <a> tags
+        $("li > h2").hover(function(){
+            const colors = ['#ff0000', '#00ff00', '#0000ff', 'lime', 'orange', 'yellow'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // document.getElementById('title').style.backgroundColor = randomColor;
+            $(".Left").css('background-color', randomColor);
+        });
+    });
+    </script>
+
 
     </body>
 </html>
