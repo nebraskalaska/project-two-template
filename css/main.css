@@ -30,7 +30,6 @@ h2 {
 a {
     text-decoration: none;
     color: blue;
-
 }
 
 ul {
@@ -109,11 +108,33 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 
 .logo {
-    margin: -10px 0px 0px 602px;
-    position: fixed;
+    margin: -10px 0px 0px -38px;
+    position: absolute;
     overflow: visible;
 }
 
 .arrow {
     margin: 5px 0px 0px 260px;
 }
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+    div.Left{
+        display: none;
+    }
+}
+
+/*@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+}
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+}
+}*/
