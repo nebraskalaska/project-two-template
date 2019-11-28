@@ -37,10 +37,12 @@ ul {
     padding-left: 50px;
 }
 
-li {
+a {
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 30px;
+    display: block;
+    color: #000;
 }
 
 p {
@@ -96,7 +98,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
     padding: 20px 380px 20px 25px;
 }
 
-
 .Right p, h3 {
     padding: 10px 20px 20px 350px;
     line-height: 25px;
@@ -114,7 +115,11 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 
 .arrow {
-    margin: 5px 0px 0px 260px;
+    margin: auto;
+    position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .mobile-hide {
@@ -130,12 +135,26 @@ div.Left{
     display: none;
 }
 
+h1 {
+    font-size: 3.1em;
+    padding: 50px 55px 0px 50px;
+}
+
+.Right h2 {
+    padding: 20px 380px 20px 55px;
+}
+
+.logo {
+    margin: -10px 0px 0px -8px;
+    position: absolute;
+    overflow: visible;
+}
+
 .mobile-hide{
     display:block;
 }
 
-
-/* START of Mobile Menu */
+/* MOBILE MENU */
 
 .nav, .desktop {
     display: block;
@@ -162,7 +181,7 @@ div.Left{
     width: 40px;
     height: 4px;
     line-height: 50px;
-    background: lime;
+    background: blue;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -177,7 +196,7 @@ div.Left{
     position: absolute;
     width: 40px;
     height: 4px;
-    background: lime;
+    background: blue;
     border-radius: 5px;
     transition: .5s;
 }
@@ -192,7 +211,6 @@ div.Left{
 
 .icon.active .hamburger {
     background: rgba(0,0,0,0);
-    box-shadow: 0 2px 5px rgba(0,0,0,0);
 }
 
 .icon.active .hamburger:before {
@@ -206,20 +224,19 @@ div.Left{
 }
 
 .menu-mobile {
-    background-color: #efefef;
+    background-color: lime;
     height: 100vh;
     position: fixed;
     width: 100%;
     z-index: 999;
     padding-top: 150px;
-    font-family: 'Helvetica', sans-serif;
-    text-align: center;
+    padding-left: 50px;
 }
 
 .menu-mobile, .menu-mobile a {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 
 .menu-mobile a {
@@ -239,4 +256,22 @@ div.Left{
     }
 
 }
-/* END OF Mobile Menu */
+
+@media only screen and (max-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+
+h1 {
+    font-size: 2.1em;
+    font-weight: 100;
+    padding: 20px 55px 0px 50px;
+}
+
+.Right h2 {
+    padding: 20px 380px 20px 55px;
+}
+
+.Right p, h3 {
+    padding: 10px 10px 20px 55px;
+    line-height: 25px;
+}
+}

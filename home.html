@@ -15,34 +15,34 @@
     <div class="Left">  
         <div class="nav">
             <ul>
-            <li><h2>_Visit</h2></li>
-            <li>Calendar</li>
-            <li>Location + Contact<li>
+            <a href="#visit"><h2>_Visit</h2><a href="#visit"></a>
+            <a href="#">Calendar</a>
+            <a href="#">Location + Contact</a>
 
-            <li><h2>_Programming</h2></li>
-            <li>Curator In Residence</li>
-            <li>Exhbitions</li>
-            <li>Culinaria</li>
-            <li>Platform</li>
-            <li>On Loan</li>
-            <li>Catalogs</li>
+            <a href="programming"><h2>_Programming</h2></a>
+            <a href="#">Curator In Residence</a>
+            <a href="#">Exhbitions</a>
+            <a href="#">Culinaria</a>
+            <a href="#">Platform</a>
+            <a href="#">On Loan</a>
+            <a href="#">Catalogs</a>
 
-            <li><h2>_Get Involved</h2></li>
-            <li>Sponsor + Donate</li>
-            <li>Become a Member</li>
-            <li>Volunteer or Intern</li>
-            <li>Rent our Space</li>
+            <a href="involved"><h2>_Get Involved</h2></a>
+            <a href="#">Sponsor + Donate</a>
+            <a href="#">Become a Member</a>
+            <a href="#">Volunteer or Intern</a>
+            <a href="#">Rent our Space</a>
 
-            <li><h2>_Connect</h2></li>
-            <li>Join the mailing list</li>
-            <li>Our Community</li> 
-            <li>Sponsors + Supporters</li>
+            <a href="connect"><h2>_Connect</h2></a>
+            <a href="#">Join the mailing list</a>
+            <a href="#">Our Community</a>
+            <a href="#">Sponsors + Supporters</a>
 
-            <li><h2>_Learn More</h2></li>
-            <li>Mission Statement</li>
-            <li>Press</li>
-            <li>Safe Space Agreement</li>
-            <li>About our W.A.G.E. Certificate</li>
+            <a href="learn"><h2>_Learn More</h2></a>
+            <a href="#">Mission Statement</a>
+            <a href="#">Press</a>
+            <a href="#">Safe Space Agreement</a>
+            <a href="#">About our W.A.G.E. Certificate</a>
             </ul>
         </div>
     </div>
@@ -52,11 +52,11 @@
             <div class="hamburger"></div>
         </div>
         <div class="menu-mobile">
-            <a href="#intro-section">VISIT</a>
-            <a href="#about">PROGRAMMING</a>
-            <a href="#services">GET INVOLVED</a>
-            <a href="#portfolio">CONNECT</a>
-            <a href="#contact">LEARN MORE</a>
+            <a href="#visit"><h2>_Visit</h2></a>
+            <a href="#programming"><h2>_Programming</h2></a>
+            <a href="#involved"><h2>_Get Involved</h2></a>
+            <a href="#connect"><h2>_Connect</h2></a>
+            <a href="#learn"><h2>_Learn More</h2></a>
         </div>          
     </header>
     
@@ -83,7 +83,7 @@
     <script>
     $(document).ready(function(){
         //change "li" to "a" or better the ".class" of your <a> tags
-        $("li > h2").hover(function(){
+        $("a > h2").hover(function(){
             const colors = ['#ff0000', '#00ff00', '#0000ff', 'lime', 'orange', 'yellow'];
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             // document.getElementById('title').style.backgroundColor = randomColor;
