@@ -117,24 +117,126 @@ WebKit inertia scrolling is being added here for any present/future devices that
     margin: 5px 0px 0px 260px;
 }
 
+.mobile-hide {
+    display: none;
+}
+
 
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 768px) {
-    div.Left{
+
+div.Left{
+    display: none;
+}
+
+.mobile-hide{
+    display:block;
+}
+
+
+/* START of Mobile Menu */
+
+.nav, .desktop {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 900;
+}
+
+.icon {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 0%;
+    width: 40px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 1000;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    line-height: 50px;
+    background: lime;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: lime;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.hamburger:before {
+    top: -10px;
+}
+
+.hamburger:after {
+    top: 10px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.menu-mobile {
+    background-color: #efefef;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 150px;
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+.menu-mobile, .menu-mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu-mobile a {
+    clear: right;
+    text-decoration: none;
+    color: #333;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu-mobile a:hover {
+    color: red;
+}
+
+.desktop, .menu-desktop, .menu-mobile {
         display: none;
     }
-}
 
-/*@media only screen and (min-width: 768px) {
 }
-
-@media only screen and (min-width: 1024px) {
-    body {
-}
-}
-
-@media only screen and (min-width: 1200px) {
-    body {
-}
-}*/
+/* END OF Mobile Menu */
