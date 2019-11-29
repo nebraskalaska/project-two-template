@@ -99,13 +99,14 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 
 .Right p, h3 {
-    padding: 10px 20px 20px 350px;
-    line-height: 25px;
+    text-align: left;
+    justify-content: right;
+    padding: 10px 30px 20px 300px;
 }
 
 .main {
-    max-width: 100%;
-    max-height:100%;
+    width: 100%;
+    height: auto;
 }
 
 .logo {
@@ -118,8 +119,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
     margin: auto;
     position: relative;
     display: flex;
-  align-items: center;
-  justify-content: center
+    align-items: center;
+    justify-content: center
 }
 
 .mobile-hide {
@@ -128,6 +129,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 
 /*MEDIA QUERIES*/
+
 
 @media only screen and (max-width: 768px) {
 
@@ -230,7 +232,8 @@ h1 {
     width: 100%;
     z-index: 999;
     padding-top: 150px;
-    padding-left: 50px;
+    padding-left: 20px;
+    overflow-y: scroll;
 }
 
 .menu-mobile, .menu-mobile a {
@@ -244,20 +247,21 @@ h1 {
     text-decoration: none;
     color: #333;
     height: 70px;
-    line-height: 70px;
+    line-height: 20px;
 }
 
 .menu-mobile a:hover {
-    color: red;
+    color: blue;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
         display: none;
     }
-
 }
 
-@media only screen and (max-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+
+@media only screen and (max-device-width: 425px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 
 h1 {
@@ -271,7 +275,14 @@ h1 {
 }
 
 .Right p, h3 {
-    padding: 10px 10px 20px 55px;
-    line-height: 25px;
+    text-align: left;
+    justify-content: left;
+    padding: 10px 30px 20px 30px;
 }
+}
+
+
+@media only screen and (max-device-width: 360px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+
 }
