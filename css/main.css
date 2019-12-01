@@ -51,6 +51,11 @@ p {
     font-weight: 200;
 }
 
+h5 {
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
 /*main wrapping element, 100vh high to ensure it is always the correct size and then moved into place and padded with negative margin and padding*/
 .Container {
     display: flex;
@@ -69,7 +74,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .Right {
     overflow: auto;
     height: auto;
-    padding: .5rem;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
 }
@@ -290,4 +294,53 @@ h1 {
 
 #page2 .map {
     width: 100%;
+    height: auto;
 }
+
+/*CALENDAR*/
+
+#page3 img {
+  opacity: 1;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#page3 img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#page3 .biennial, .auction, .twoup, .punkdeism {
+    width: 100%;
+    object-fit: contain;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#page3 .Right h1 {
+    margin-top: 80px;
+}
+
+#page3 .Right h3 {
+    text-align: right;
+    padding: 40px 10px 0px 0px;
+}
+
+#page3 .Right h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
