@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Disjecta</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500|Oswald:300,400,500&display=swap" rel="stylesheet">
+        <link href="dist/hamburgers.css" rel="stylesheet">
+    </head>
+
+<body id="page3">
+<div class="Container">
+
+<!--LEFT SIDE OF SCREEN-->
+
+    <div class="Left">  
+        <div class="nav">
+            <ul>
+            <a href="#"><h2>_Visit</h2></a>
+            <a href="#">Calendar</a>
+            <a href="location.html">Location + Contact</a>
+
+            <a href="programming"><h2>_Programming</h2></a>
+            <a href="#">Curator In Residence</a>
+            <a href="#">Exhbitions</a>
+            <a href="#">Culinaria</a>
+            <a href="#">Platform</a>
+            <a href="#">On Loan</a>
+            <a href="#">Catalogs</a>
+
+            <a href="involved"><h2>_Get Involved</h2></a>
+            <a href="#">Sponsor + Donate</a>
+            <a href="#">Become a Member</a>
+            <a href="#">Volunteer or Intern</a>
+            <a href="#">Rent our Space</a>
+
+            <a href="connect"><h2>_Connect</h2></a>
+            <a href="#">Join the mailing list</a>
+            <a href="#">Our Community</a>
+            <a href="#">Sponsors + Supporters</a>
+
+            <a href="learn"><h2>_Learn More</h2></a>
+            <a href="#">Mission Statement</a>
+            <a href="#">Press</a>
+            <a href="#">Safe Space Agreement</a>
+            <a href="#">About our W.A.G.E. Certificate</a>
+            </ul>
+        </div>
+    </div>
+
+    <!--MOBILE NAV-->
+
+    <header class="nav mobile-hide">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="menu-mobile">
+             <ul>
+            <a href="#visit"><h2>_Visit</h2></a>
+            <a href="calendar.html">Calendar</a>
+            <a href="#">Location + Contact</a>
+
+            <a href="programming"><h2>_Programming</h2></a>
+            <a href="#">Curator In Residence</a>
+            <a href="#">Exhbitions</a>
+            <a href="#">Culinaria</a>
+            <a href="#">Platform</a>
+            <a href="#">On Loan</a>
+            <a href="#">Catalogs</a>
+
+            <a href="involved"><h2>_Get Involved</h2></a>
+            <a href="#">Sponsor + Donate</a>
+            <a href="#">Become a Member</a>
+            <a href="#">Volunteer or Intern</a>
+            <a href="#">Rent our Space</a>
+
+            <a href="connect"><h2>_Connect</h2></a>
+            <a href="#">Join the mailing list</a>
+            <a href="#">Our Community</a>
+            <a href="#">Sponsors + Supporters</a>
+
+            <a href="learn"><h2>_Learn More</h2></a>
+            <a href="#">Mission Statement</a>
+            <a href="#">Press</a>
+            <a href="#">Safe Space Agreement</a>
+            <a href="#">About our W.A.G.E. Certificate</a>
+            </ul>
+        </div>          
+    </header>
+
+    <!--RIGHT SIDE OF SCREEN-->
+    
+    <div class="Right">
+        <a href="home.html"><img src="./images/logo.png" class="logo" width="61px" height="auto"></a>
+        <h1>Events & Exhibitions</h1>
+       
+        <h3>August 25 - November 3, 2019</h3>
+        <div class="image-container">
+            <img src="./images/biennial.jpg" class="biennial">
+            <div class="centered"><h5>Portland2019 Biennial</h5></div>
+        </div>
+
+        
+        <h3>November 16, 2019</h3>
+        <div class="image-container">
+            <img src="./images/shrine20190925-39578-3n18ww.jpg" class="auction">
+            <div class="centered"><h5>Annual Art Auction</h5></div>
+        </div>
+
+
+        <h3>December 8, 2019- February 2, 2020</h3>
+        <div class="image-container">
+            <img src="./images/twoup.jpg" class="twoup">
+            <div class="centered"><h5>2 Up and 2 Back: Arvie Smith</h5></div>
+        </div>
+
+        <h3>December 8, 2019- January 19, 2020</h3>
+         <div class="image-container">
+            <img src="./images/twoup.jpg" class="punkdeism">
+            <div class="centered"><h5>PUNKDEISM by Coco Dolle</h5>
+        </div>
+    </div>
+
+</div>
+
+    <!--HAMBURGER HELPER-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    <!--CHANGE COLOR ON HOVER-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        //change "li" to "a" or better the ".class" of your <a> tags
+        $("a > h2").hover(function(){
+            const colors = ['#ff0000', '#00ff00', '#0000ff', 'lime', 'orange', 'yellow', 'gray', 'cyan', 'purple', 'teal', 'tomato', 'spring green', 'cornflower blue', 'violet', 'hotpink'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // document.getElementById('title').style.backgroundColor = randomColor;
+            $(".Left").css('background-color', randomColor);
+        });
+    });
+    </script>
+
+
+    </body>
+</html>
