@@ -17,10 +17,10 @@ body {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.6em;
     font-weight: 300;
     letter-spacing: 5px;
-    padding: 0px 30px 0px 20px;
+    padding: 30px 30px 0px 20px;
     margin-top: 50px;
 }
 
@@ -29,26 +29,47 @@ h2 {
     letter-spacing: 5px;
 }
 
+
+}
 a {
-    text-decoration: none;
     color: blue;
 }
 
 ul {
     list-style-type: none;
     padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 a {
     font-weight: 300;
     letter-spacing: 2px;
-    line-height: 30px;
+    line-height: 40px;
     display: block;
     color: #000;
 }
 
+.Left a:hover {
+    color: white;
+}
+
+.Left h2:hover {
+    cursor:crosshair;
+}
+
+.Right a:hover {
+    color: blue;
+}
+
+.Right a, h2:hover {
+    color: black;
+}
+
 p {
     font-weight: 200;
+    letter-spacing: 1.15px;
+    line-height: 22px
 }
 
 h5 {
@@ -133,9 +154,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
     display: none;
 }
 
-
-
-
 /*MEDIA QUERIES*/
 
 
@@ -155,7 +173,7 @@ h1 {
 }
 
 .logo {
-    margin: -10px 0px 0px -8px;
+    margin: 0px 0px 0px 0px;
     position: absolute;
     overflow: visible;
 }
@@ -239,8 +257,9 @@ h1 {
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-left: 50px;
+    overflow: scroll;
 }
 
 .menu-mobile, .menu-mobile a {
@@ -252,19 +271,17 @@ h1 {
     clear: right;
     text-decoration: none;
     color: #333;
-    height: 70px;
-    line-height: 70px;
+    line-height: 30px;
 }
 
 .menu-mobile a:hover {
-    color: red;
+    color: white;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
-        display: none;
-    }
+    display: none;
 }
-
+}
 
 @media only screen and (max-device-width: 435px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
@@ -286,7 +303,7 @@ h1 {
 }
 }
 
-/*LOCATION+CONTACT*/
+/* LOCATION+CONTACT page4 */
 
 #page2 h1 {
     padding-top: 70px;
@@ -297,7 +314,7 @@ h1 {
     height: auto;
 }
 
-/*CALENDAR*/
+/* CALENDAR #page3 */
 
 #page3 img {
   opacity: 1;
@@ -318,6 +335,7 @@ h1 {
   position: relative;
   text-align: center;
   color: white;
+  padding-bottom: 20px;
 }
 
 .centered {
@@ -333,14 +351,24 @@ h1 {
 
 #page3 .Right h3 {
     text-align: right;
-    padding: 40px 10px 0px 0px;
+    padding: 70px 30px 0px 0px;
 }
 
 #page3 .Right h5 {
     margin-top: 0px;
     margin-bottom: 0px;
+    text-shadow: 2px 2px blue;
 }
 
+/* EVENT #page4 */
 
+.biennial2019 {
+    width: 100%;
+    height: auto;
+}
+
+#page4 h4 {
+    padding-left: 28px;
+}
 
 
