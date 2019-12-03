@@ -1,168 +1,163 @@
 /*HOME PAGE*/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    color: #ebebeb;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #ebebeb;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    font-size: 3.6em;
-    font-weight: 300;
-    letter-spacing: 5px;
-    padding: 30px 30px 0px 20px;
-    margin-top: 50px;
+  font-size: 3.6em;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding: 30px 30px 0px 20px;
+  margin-top: 50px;
 }
 
 h2 {
-    font-weight: 300;
-    letter-spacing: 5px;
+  font-weight: 300;
+  letter-spacing: 5px;
 }
 
-
-}
 a {
-    color: blue;
+  color: blue;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-top: 20px;
+  list-style-type: none;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 a {
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 40px;
-    display: block;
-    color: #000;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 40px;
+  display: block;
+  color: #000;
 }
 
 .Left a:hover {
-    color: white;
+  color: white;
 }
 
 .Left h2:hover {
-    cursor:crosshair;
+  cursor:crosshair;
 }
 
 .Right a:hover {
-    color: blue;
+  color: blue;
 }
 
 .Right a, h2:hover {
-    color: black;
+  color: black;
 }
 
 p {
-    font-weight: 200;
-    letter-spacing: 1.15px;
-    line-height: 22px
+  font-weight: 200;
+  letter-spacing: 1.15px;
+  line-height: 22px
 }
 
 h5 {
-    font-weight: 500;
-    font-size: 3.5em;
+  font-weight: 500;
+  font-size: 3.5em;
 }
 
-/*main wrapping element, 100vh high to ensure it is always the correct size and then moved into place and padded with negative margin and padding*/
+/*MAIN WRAPPING ELEMENT*/
 .Container {
-    display: flex;
-    overflow: hidden;
-    height: 100vh;
-    position: relative;
-    width: 100%;
-    backface-visibility: hidden;
-    will-change: overflow;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+  will-change: overflow;
 }
 
-/*All the scrollable sections should overflow and be whatever height they need to be. As they are flex-items (due to being inside a flex container) they could be made to stretch full height at all times if needed.
-WebKit inertia scrolling is being added here for any present/future devices that are able to make use of it.
-*/
 .Left,
 .Right {
-    overflow: auto;
-    height: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
+  overflow: auto;
+  height: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
 }
 
 .Left::-webkit-scrollbar,
 .Right::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .Left {
-    width: 50rem;
-    background-color: lime;
-    transition: background-color 0.3s;
-    color: black;
+  width: 50rem;
+  background-color: lime;
+  transition: background-color 0.3s;
+  color: black;
 }
 
 .Right {
-    width: 50rem;
-    color: black;
+  width: 50rem;
+  color: black;
 }
 
 .changeColor {
-   background: #fff;
+  background: #fff;
 }
 
 .Right h2 {
-    padding: 20px 380px 20px 25px;
+  padding: 20px 380px 20px 25px;
 }
 
 .Right p, h3 {
-    text-align: left;
-    justify-content: right;
-    padding: 10px 30px 20px 300px;
+  text-align: left;
+  justify-content: right;
+  padding: 10px 30px 20px 300px;
 }
 
 .main {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .logo {
-    margin: -10px 0px 0px -35px;
-    position: absolute;
-    overflow: visible;
+  margin: -10px 0px 0px -35px;
+  position: absolute;
+  overflow: visible;
 }
 
 .arrow {
-    margin: auto;
-    padding-bottom: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center
+  margin: auto;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .mobile-hide {
-    display: none;
+  display: none;
 }
 
-/* LOCATION+CONTACT page4 */
+/* LOCATION+CONTACT page2 */
 
 #page2 h1 {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
-#page2 .map {`
-    width: 100%;
-    height: auto;
+#page2 .map {
+  width: 100%;
+  height: auto;
 }
 
 /* CALENDAR #page3 */
@@ -178,8 +173,8 @@ WebKit inertia scrolling is being added here for any present/future devices that
 }
 
 #page3 .biennial, .auction, .twoup, .punkdeism {
-    width: 100%;
-    object-fit: contain;
+  width: 100%;
+  object-fit: contain;
 }
 
 .image-container {
@@ -214,182 +209,220 @@ WebKit inertia scrolling is being added here for any present/future devices that
 /* EVENT #page4 */
 
 .biennial2019 {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #page4 h4 {
-    padding-left: 28px;
+  padding-left: 28px;
 }
-
-
-
 
 /*MEDIA QUERIES*/
 
+/*MEDIA QUERY 1024px*/
+@media only screen and (max-width: 1024px) {
 
-@media only screen and (max-width: 768px) {
 
-div.Left{
-    display: none;
-}
 
-h1 {
-    font-size: 3.1em;
-    padding: 50px 55px 0px 50px;
+.Right p, h3 {
+  padding: 0px 20px 0px 180px;
 }
 
 .Right h2 {
-    padding: 20px 200px 20px 55px;
+  padding: 0px 180px 0px 20px;
+}
+
+
+
+/*MEDIA QUERY 768px*/
+@media only screen and (max-width: 768px) {
+
+div.Left{
+  display: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+  padding: 20px 55px 0px 58px;
+}
+
+.Right h2 {
+  padding: 20px 200px 20px 62px;
+}
+
+.Right p {
+  text-align: center;
+  justify-content: center;
+  padding: 0px 20px 0px 20px;
+}
+
+#page4 .Right p {
+  text-align: left;
+  justify-content: center;
+  padding: 0px 20px 0px 20px;
+}
+
+#page2 .Right h3 {
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0px 0px 0px;
 }
 
 #page3 .Right h3 {
-    text-align: center;
-    padding: 50px 0px 0px 0px;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0px 0px 0px;
+}
+
+.Right h4 {
+  text-align: center;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+
 }
 
 h5 {
-    font-size: 2.5em;
+  font-size: 2em;
 }
 
 .logo {
-    margin: 0px 0px 0px 0px;
-    position: absolute;
-    overflow: visible;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  overflow: visible;
 }
 
 .mobile-hide{
-    display:block;
+  display:block;
 }
 
 /* MOBILE MENU */
-
 .nav, .desktop {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 900;
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 900;
 }
 
 .icon {
-    position: fixed;
-    cursor: pointer;
-    top: 5%;
-    right: 0%;
-    width: 40px;
-    height: 45px;
-    transform: translate(-50%, -50%);
-    display: block;
-    z-index: 1000;
+  position: fixed;
+  cursor: pointer;
+  top: 5%;
+  right: 0%;
+  width: 40px;
+  height: 45px;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 1000;
 }
 
 .hamburger {
-    width: 40px;
-    height: 4px;
-    line-height: 50px;
-    background: blue;
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: .5s;
+  width: 40px;
+  height: 4px;
+  line-height: 50px;
+  background: blue;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .5s;
 }
 
 .hamburger:before,
 .hamburger:after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 4px;
-    background: blue;
-    border-radius: 5px;
-    transition: .5s;
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: blue;
+  border-radius: 5px;
+  transition: .5s;
 }
 
 .hamburger:before {
-    top: -10px;
+  top: -10px;
 }
 
 .hamburger:after {
-    top: 10px;
+  top: 10px;
 }
 
 .icon.active .hamburger {
-    background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0);
 }
 
 .icon.active .hamburger:before {
-    top: 0;
-    transform: rotate(45deg);
+  top: 0;
+  transform: rotate(45deg);
 }
 
 .icon.active .hamburger:after {
-    top: 0;
-    transform: rotate(135deg);
+  top: 0;
+  transform: rotate(135deg);
 }
 
 .menu-mobile {
-    background-color: lime;
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding-top: 50px;
-    padding-left: 20px;
-    overflow: scroll;
+  background-color: lime;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding-top: 50px;
+  padding-left: 20px;
+  overflow: scroll;
 }
 
 .menu-mobile, .menu-mobile a {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-mobile a {
-    clear: right;
-    color: #333;
-    line-height: 30px;
+  clear: right;
+  color: #333;
+  line-height: 30px;
 }
 
 .menu-mobile a:hover {
-    color: white;
+  color: white;
 }
 
 .menu-mobile h2 {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .desktop, .menu-desktop, .menu-mobile {
-    display: none;
+  display: none;
 }
+} 
 
-}
+/*MEDIA QUERY 768px*/
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.8em;
+  }
 
-@media only screen and (max-device-width: 435px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+  h2 {
+    font-size: 1.2em;
+    line-height: 25px;
+  }
 
-h1 {
-    font-size: 2.1em;
-    font-weight: 100;
-    padding: 20px 55px 0px 50px;
-}
-
-.Right h2 {
-    padding: 20px 380px 20px 58px;
-}
-
-.Right p {
-    text-align: left;
-    justify-content: left;
-    padding: 10px 30px 20px 58px;
-}
-
-.Right h3 {
+  h3 {
     text-align: center;
-    padding: 50px 0px 0px 0px;
+    padding: 0px;
+  }
 }
-}
+
+/*END MEDIA QUERIES*/
+
+
+/*MEDIA QUERY 435px
+@media only screen and (max-device-width: 768px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){*/
+
+
+} /*END MEDIA QUERIES*/
 
