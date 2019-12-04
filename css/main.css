@@ -149,7 +149,7 @@ h5 {
   display: none;
 }
 
-/* LOCATION+CONTACT page2 */
+/* LOCATION+CONTACT #page2 */
 
 #page2 h1 {
   padding-top: 70px;
@@ -222,8 +222,6 @@ h5 {
 /*MEDIA QUERY 1024px*/
 @media only screen and (max-width: 1024px) {
 
-
-
 .Right p, h3 {
   padding: 0px 20px 0px 180px;
 }
@@ -231,8 +229,7 @@ h5 {
 .Right h2 {
   padding: 0px 180px 0px 20px;
 }
-
-
+}
 
 /*MEDIA QUERY 768px*/
 @media only screen and (max-width: 768px) {
@@ -297,6 +294,7 @@ h5 {
 }
 
 /* MOBILE MENU */
+
 .nav, .desktop {
   display: block;
   position: fixed;
@@ -401,6 +399,7 @@ h5 {
 } 
 
 /*MEDIA QUERY 768px*/
+
 @media only screen and (max-width: 360px) {
   h1 {
     font-size: 1.8em;
@@ -418,11 +417,3 @@ h5 {
 }
 
 /*END MEDIA QUERIES*/
-
-
-/*MEDIA QUERY 435px
-@media only screen and (max-device-width: 768px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){*/
-
-
-} /*END MEDIA QUERIES*/
-
