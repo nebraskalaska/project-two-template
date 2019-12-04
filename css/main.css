@@ -119,6 +119,10 @@ h5 {
   padding: 20px 380px 20px 25px;
 }
 
+.Right h2.subtitle {
+  padding: 20px 25px 20px 25px;
+}
+
 .Right p, h3 {
   text-align: left;
   justify-content: right;
